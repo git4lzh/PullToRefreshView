@@ -7,5 +7,4 @@
         android:pivotY="50%"
         android:repeatCount="-1"
         android:toDegrees="360">
-
 </rotate>
