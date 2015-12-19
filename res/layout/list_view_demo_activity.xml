@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.demo.pulltorefreshview.pulltorefreshview.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <include layout="@layout/pull_to_refresh_refresh_head"/>
+
+        <com.demo.pulltorefreshview.pulltorefreshview.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:divider="@color/color_gray"
+                android:dividerHeight="1dp"/>
+
+        <include layout="@layout/pull_to_refresh_load_more"/>
+
+    </com.demo.pulltorefreshview.pulltorefreshview.PullToRefreshLayout>
+</LinearLayout>
+
